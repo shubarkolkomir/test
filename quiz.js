@@ -18,7 +18,7 @@ const QUIZ_COUNT = {
     pb:   100,
     ptm:  20
   },
-  electrical: 56,
+  electrical: 61,
   slinger: 20
 };
 
@@ -55,6 +55,19 @@ const TEST_TYPES = {
     isCommon: true,
     questionCount: 20
   },
+  civil_protection: { name: "Гражданская защита", title: "Гражданская защита", commonFile: "civil_protection.json", isCommon: true, questionCount: 20 },
+  mining: { name: "Горные и геологоразведочные работы", title: "Горные и геологоразведочные работы", commonFile: "mining.json", isCommon: true, questionCount: 20 },
+  solid_minerals: { name: "Переработка твердых полезных ископаемых", title: "Переработка твердых полезных ископаемых", commonFile: "solid_minerals.json", isCommon: true, questionCount: 20 },
+  tailings: { name: "Хвостовые и шламовые хозяйства", title: "Хвостовые и шламовые хозяйства", commonFile: "tailings.json", isCommon: true, questionCount: 20 },
+  blasting: { name: "Взрывные работы", title: "Взрывные работы", commonFile: "blasting.json", isCommon: true, questionCount: 20 },
+  lifting_mechanisms: { name: "Грузоподъемные механизмы", title: "Грузоподъемные механизмы", commonFile: "lifting_mechanisms.json", isCommon: true, questionCount: 20 },
+  pressure_equipment: { name: "Оборудование под давлением", title: "Оборудование под давлением", commonFile: "pressure_equipment.json", isCommon: true, questionCount: 50 },
+  metallurgy: { name: "Производство расплавов металлов", title: "Производство расплавов металлов", commonFile: "metallurgy.json", isCommon: true, questionCount: 20 },
+  petrochem: { name: "Нефтехимия и нефтепереработка", title: "Нефтехимия и нефтепереработка", commonFile: "petrochem.json", isCommon: true, questionCount: 20 },
+  chemical_industry: { name: "Химическая промышленность", title: "Химическая промышленность", commonFile: "chemical_industry.json", isCommon: true, questionCount: 20 },
+  compressor_stations: { name: "Компрессорные станции", title: "Компрессорные станции", commonFile: "compressor_stations.json", isCommon: true, questionCount: 20 },
+  ionizing_radiation: { name: "Источники ионизирующего излучения", title: "Источники ионизирующего излучения", commonFile: "ionizing_radiation.json", isCommon: true, questionCount: 20 },
+  gas_supply: { name: "Газоснабжение", title: "Газоснабжение", commonFile: "gas_supply.json", isCommon: true, questionCount: 50 },
 };
 
 // ══════════════════════════════════════════
@@ -193,6 +206,19 @@ function showTestSelection() {
       ptm: '🧯',
       electrical: '⚡',
       slinger: '🏗️',
+      civil_protection: '🚨',
+      mining: '⛏️',
+      solid_minerals: '⚙️',
+      tailings: '🌊',
+      blasting: '💥',
+      lifting_mechanisms: '🏗️',
+      pressure_equipment: '🧰',
+      metallurgy: '🔥',
+      petrochem: '🛢️',
+      chemical_industry: '⚗️',
+      compressor_stations: '🌀',
+      ionizing_radiation: '☢️',
+      gas_supply: '🔥'
     };
     const icon = icons[key] || '📋';
 
